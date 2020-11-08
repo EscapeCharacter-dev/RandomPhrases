@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RandomPhrases": {
+      "commandName": "Project",
+      "commandLineArgs": "128"
+    }
+  }
+}
