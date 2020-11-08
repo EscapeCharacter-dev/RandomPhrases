@@ -78,11 +78,13 @@ restart:
 
             while (true)
             {
-                if (Console.ReadKey(true).Key == ConsoleKey.Y)
+                if (Console.KeyAvailable || Console.ReadKey(true).Key == ConsoleKey.Y)
                 {
-                    
+
                     goto restart;
                 }
+                else
+                    return 0;
             }
         }
     }
