@@ -62,7 +62,8 @@ restart:
             total = total.Trim();
             if (!total.EndsWith('.'))
                 total += ".";
-            if (total.EndsWith(';') || total.EndsWith('/') || total.EndsWith(':') || total.EndsWith(','))
+            if (total.EndsWith(';') || total.EndsWith('/') || total.EndsWith(':') || total.EndsWith(',')
+                || total.EndsWith('-'))
             {
                 total = total.Remove(total.Length - 1);
                 total = total.Trim();
